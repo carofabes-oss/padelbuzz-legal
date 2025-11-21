@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PadelBuzz - Informations Légales</title>
+    <title>PadelBuzz - Legal Documents</title>
     <style>
         * {
             margin: 0;
@@ -22,135 +22,148 @@
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 900px;
+            width: 100%;
             background-color: white;
+            padding: 60px 40px;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-        .header {
-            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
-            color: white;
-            padding: 60px 40px;
             text-align: center;
         }
-        .logo {
+        h1 {
             font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: -1px;
-        }
-        .tagline {
-            font-size: 18px;
-            opacity: 0.9;
-            font-weight: 300;
-        }
-        .content {
-            padding: 40px;
-        }
-        h2 {
             color: #1E40AF;
-            font-size: 24px;
             margin-bottom: 20px;
-            text-align: center;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #6B7280;
+            margin-bottom: 50px;
+        }
+        .languages {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .language-section {
+            flex: 1;
+            max-width: 280px;
+        }
+        .language-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1E40AF;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .flag {
+            font-size: 32px;
         }
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-        .link-card {
+        .link {
             display: block;
-            padding: 20px;
-            background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
-            border-radius: 12px;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+            color: white;
             text-decoration: none;
-            color: #1E40AF;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
         }
-        .link-card:hover {
+        .link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(30, 64, 175, 0.2);
-            border-color: #3B82F6;
-            background: white;
-        }
-        .link-card h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-            color: #1E40AF;
-        }
-        .link-card p {
-            font-size: 14px;
-            color: #6B7280;
-            margin: 0;
+            box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
         }
         .footer {
-            padding: 30px 40px;
-            text-align: center;
-            background-color: #F9FAFB;
-            color: #6B7280;
+            margin-top: 60px;
+            color: #9CA3AF;
             font-size: 14px;
         }
-        .contact {
-            margin-top: 15px;
-        }
-        .contact a {
+        .footer a {
             color: #3B82F6;
             text-decoration: none;
-            font-weight: 500;
         }
-        .contact a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 600px) {
-            .header {
-                padding: 40px 30px;
+        @media (max-width: 768px) {
+            .languages {
+                flex-direction: column;
+                gap: 40px;
             }
-            .logo {
-                font-size: 36px;
-            }
-            .tagline {
-                font-size: 16px;
-            }
-            .content {
-                padding: 30px 20px;
-            }
-            h2 {
-                font-size: 20px;
+            .language-section {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="logo">PadelBuzz ⚡</div>
-            <p class="tagline">Record, Analyze, Improve</p>
-        </div>
+        <h1>🎾 PadelBuzz</h1>
+        <p class="subtitle">Legal Documents</p>
 
-        <div class="content">
-            <h2>Documents Légaux</h2>
+        <div class="languages">
+            <div class="language-section">
+                <h2 class="language-title">
+                    <span class="flag">🇫🇷</span>
+                    Français
+                </h2>
+                <div class="links">
+                    <a href="privacy-policy.html" class="link">
+                        📋 Politique de Confidentialité
+                    </a>
+                    <a href="terms-of-service.html" class="link">
+                        📜 Conditions d'Utilisation
+                    </a>
+                </div>
+            </div>
 
-            <div class="links">
-                <a href="privacy-policy.html" class="link-card">
-                    <h3>🔒 Politique de Confidentialité</h3>
-                    <p>Comment nous protégeons vos données personnelles</p>
-                </a>
+            <div class="language-section">
+                <h2 class="language-title">
+                    <span class="flag">🇬🇧</span>
+                    English
+                </h2>
+                <div class="links">
+                    <a href="privacy-policy-en.html" class="link">
+                        📋 Privacy Policy
+                    </a>
+                    <a href="terms-of-service-en.html" class="link">
+                        📜 Terms of Service
+                    </a>
+                </div>
+            </div>
 
-                <a href="terms-of-service.html" class="link-card">
-                    <h3>📋 Conditions d'Utilisation</h3>
-                    <p>Les règles d'utilisation de l'application</p>
-                </a>
+            <div class="language-section">
+                <h2 class="language-title">
+                    <span class="flag">🇪🇸</span>
+                    Español
+                </h2>
+                <div class="links">
+                    <a href="privacy-policy-es.html" class="link">
+                        📋 Política de Privacidad
+                    </a>
+                    <a href="terms-of-service-es.html" class="link">
+                        📜 Términos de Servicio
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="footer">
-            <p><strong>PadelBuzz</strong> - L'application pour les joueurs de padel</p>
-            <div class="contact">
-                <p>Contact : <a href="mailto:contact@padelbuzz.pro">contact@padelbuzz.pro</a></p>
-            </div>
-            <p style="margin-top: 15px; font-size: 12px;">© 2025 PadelBuzz. Tous droits réservés.</p>
+            <p>© 2025 PadelBuzz - All rights reserved</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:contact@padelbuzz.pro">contact@padelbuzz.pro</a>
+            </p>
         </div>
     </div>
 </body>

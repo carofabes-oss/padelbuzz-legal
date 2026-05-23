@@ -110,13 +110,12 @@
         <h3>3.2 Datos de Perfil</h3>
         <ul>
             <li><strong>Foto de perfil</strong>: Opcional, para personalizar su cuenta</li>
-            <li><strong>Fecha de nacimiento</strong>: Para verificar que cumple con la edad mínima requerida</li>
-            <li><strong>Número de teléfono</strong>: Opcional, para facilitar el contacto entre jugadores</li>
+            <li><strong>Nombre del club / lugar de juego</strong>: Detectado automáticamente mediante su ubicación para enriquecer sus estadísticas</li>
         </ul>
 
         <h3>3.3 Datos de Ubicación</h3>
         <ul>
-            <li><strong>Ubicación aproximada</strong>: Utilizada solo si lo autoriza, para ayudarle a encontrar pistas de pádel cercanas</li>
+            <li><strong>Ubicación precisa (GPS)</strong>: Utilizada solo si lo autoriza, para identificar automáticamente el club de pádel donde está jugando. Las coordenadas (latitud/longitud) y el nombre del club se registran con cada partido.</li>
             <li>Puede desactivar el acceso a la ubicación en cualquier momento en la configuración de su dispositivo</li>
         </ul>
 
@@ -133,6 +132,29 @@
             <li><strong>Versión de la aplicación</strong>: Para proporcionarle las actualizaciones apropiadas</li>
             <li><strong>Registros de errores</strong>: Para mejorar la estabilidad de la aplicación</li>
         </ul>
+
+        <h3>3.6 Datos de Salud (Apple Salud / HealthKit)</h3>
+        <p>Si lo autoriza, PadelBuzz accede a ciertos datos a través de Apple Salud durante sus partidos:</p>
+        <ul>
+            <li><strong>Lectura</strong>: número de pasos, distancia recorrida, frecuencia cardíaca, calorías quemadas</li>
+            <li><strong>Escritura</strong>: registro de sus partidos como sesiones de entrenamiento en Apple Salud</li>
+        </ul>
+        <p><strong>Compromisos estrictos sobre sus datos de salud:</strong></p>
+        <ul>
+            <li>Sus datos de salud <strong>nunca</strong> se utilizan con fines publicitarios o de marketing</li>
+            <li>Sus datos de salud <strong>nunca</strong> se venden a terceros</li>
+            <li>Sus datos de salud se almacenan de forma segura en nuestros servidores (Supabase, Europa) únicamente para enriquecer sus estadísticas personales, y nunca se comparten con otros usuarios</li>
+            <li>Puede revocar la autorización en cualquier momento en <strong>Ajustes de iPhone &gt; Salud &gt; Acceso a datos y dispositivos &gt; PadelBuzz</strong></li>
+        </ul>
+        <p>El acceso a Apple Salud es totalmente opcional — la aplicación funciona sin esta autorización.</p>
+
+        <h3>3.7 Iniciar sesión con Apple o Google</h3>
+        <p>Puede registrarse o iniciar sesión en PadelBuzz mediante:</p>
+        <ul>
+            <li><strong>Iniciar sesión con Apple</strong>: Recibimos su nombre y dirección de correo electrónico (o un alias de retransmisión privada de Apple si elige ocultar su dirección real). Apple no nos transmite ningún otro dato.</li>
+            <li><strong>Iniciar sesión con Google</strong>: Recibimos su nombre, apellido y dirección de correo electrónico. Google no nos transmite ningún otro dato.</li>
+        </ul>
+        <p>Puede revocar el acceso en cualquier momento desde los ajustes de su cuenta de Apple ID o Google.</p>
 
         <h2>4. Base Legal del Tratamiento</h2>
         <p>Tratamos sus datos sobre las siguientes bases legales:</p>
@@ -164,10 +186,12 @@
         </ul>
 
         <h3>6.2 Proveedores de Servicios</h3>
+        <p>PadelBuzz utiliza los siguientes proveedores técnicos, todos comprometidos contractualmente a proteger sus datos de conformidad con el RGPD:</p>
         <ul>
-            <li><strong>Supabase</strong>: Alojamiento seguro de base de datos (servidores conformes con GDPR en Europa)</li>
-            <li><strong>Servicios en la nube</strong>: Almacenamiento cifrado de videos</li>
+            <li><strong>Supabase</strong> (Europa): Alojamiento seguro de la base de datos, autenticación de usuarios, almacenamiento de perfiles y estadísticas de partidos</li>
+            <li><strong>Cloudflare Stream</strong> (Europa): Almacenamiento y distribución cifrados de sus videos de partidos y clips de buzz. Sus videos permanecen estrictamente privados y solo son accesibles para usted.</li>
         </ul>
+        <p>Estos proveedores actúan como encargados del tratamiento bajo el RGPD y nunca tratan sus datos para sus propios fines.</p>
 
         <h3>6.3 Obligaciones Legales</h3>
         <ul>

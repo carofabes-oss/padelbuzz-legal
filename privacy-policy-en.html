@@ -110,13 +110,12 @@
         <h3>3.2 Profile Data</h3>
         <ul>
             <li><strong>Profile Picture</strong>: Optional, to personalize your account</li>
-            <li><strong>Date of Birth</strong>: To verify you meet the minimum age requirement</li>
-            <li><strong>Phone Number</strong>: Optional, to facilitate contact between players</li>
+            <li><strong>Club / Playing Location Name</strong>: Detected automatically via your location to enrich your statistics</li>
         </ul>
 
         <h3>3.3 Location Data</h3>
         <ul>
-            <li><strong>Approximate Location</strong>: Used only if you authorize it, to help you find nearby padel courts</li>
+            <li><strong>Precise Location (GPS)</strong>: Used only if you authorize it, to automatically identify the padel club where you are playing. Coordinates (latitude/longitude) and club name are saved with each match.</li>
             <li>You can disable location access at any time in your device settings</li>
         </ul>
 
@@ -133,6 +132,29 @@
             <li><strong>Application Version</strong>: To provide you with appropriate updates</li>
             <li><strong>Error Logs</strong>: To improve application stability</li>
         </ul>
+
+        <h3>3.6 Health Data (Apple Health / HealthKit)</h3>
+        <p>If you authorize it, PadelBuzz accesses certain data via Apple Health during your matches:</p>
+        <ul>
+            <li><strong>Read</strong>: step count, distance traveled, heart rate, calories burned</li>
+            <li><strong>Write</strong>: recording of your matches as workout sessions in Apple Health</li>
+        </ul>
+        <p><strong>Strict commitments regarding your health data:</strong></p>
+        <ul>
+            <li>Your health data is <strong>never</strong> used for advertising or marketing purposes</li>
+            <li>Your health data is <strong>never</strong> sold to third parties</li>
+            <li>Your health data is securely stored on our servers (Supabase, Europe) solely to enrich your personal statistics, and is never shared with other users</li>
+            <li>You can revoke authorization at any time in <strong>iPhone Settings &gt; Health &gt; Data Access &amp; Devices &gt; PadelBuzz</strong></li>
+        </ul>
+        <p>Apple Health access is entirely optional — the app works without this authorization.</p>
+
+        <h3>3.7 Sign in with Apple or Google</h3>
+        <p>You can sign up or sign in to PadelBuzz via:</p>
+        <ul>
+            <li><strong>Sign in with Apple</strong>: We receive your name and email address (or an Apple private relay alias if you choose to hide your real address). Apple does not transmit any other data to us.</li>
+            <li><strong>Sign in with Google</strong>: We receive your first name, last name, and email address. Google does not transmit any other data to us.</li>
+        </ul>
+        <p>You can revoke access at any time from your Apple ID or Google account settings.</p>
 
         <h2>4. Legal Basis for Processing</h2>
         <p>We process your data on the following legal bases:</p>
@@ -164,10 +186,12 @@
         </ul>
 
         <h3>6.2 Service Providers</h3>
+        <p>PadelBuzz uses the following technical providers, all contractually committed to protecting your data in compliance with GDPR:</p>
         <ul>
-            <li><strong>Supabase</strong>: Secure database hosting (GDPR-compliant servers in Europe)</li>
-            <li><strong>Cloud Services</strong>: Encrypted video storage</li>
+            <li><strong>Supabase</strong> (Europe): Secure database hosting, user authentication, storage of profiles and match statistics</li>
+            <li><strong>Cloudflare Stream</strong> (Europe): Encrypted storage and distribution of your match videos and buzz clips. Your videos remain strictly private and accessible only to you.</li>
         </ul>
+        <p>These providers act as data processors under GDPR and never process your data for their own purposes.</p>
 
         <h3>6.3 Legal Obligations</h3>
         <ul>

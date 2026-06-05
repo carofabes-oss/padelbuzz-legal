@@ -168,6 +168,12 @@
         </ul>
         <p>Aucune vidéo, donnée personnelle identifiante (nom, e-mail) ni contenu textuel n'est transmis. Vous pouvez désactiver cette collecte à tout moment depuis le même écran.</p>
 
+        <h3>3.9 Données de paiement</h3>
+        <p>PadelBuzz <strong>n'accède à aucune donnée de paiement</strong> (numéro de carte bancaire, IBAN, coordonnées de facturation).</p>
+        <p>L'intégralité du paiement et de la facturation de l'abonnement Premium est gérée par <strong>Apple via votre compte Apple ID</strong> dans l'App Store. Nous ne stockons, ne transmettons, ni ne consultons aucune information financière.</p>
+        <p>Nous recevons uniquement, via notre prestataire RevenueCat, l'<strong>information technique de statut d'abonnement</strong> (actif, en période d'essai, expiré) associée à un identifiant Apple anonyme, afin de débloquer l'accès aux fonctionnalités Premium dans l'application.</p>
+        <p>Pour toute question relative à votre facturation, à un remboursement ou à la gestion de votre abonnement, veuillez consulter votre compte Apple ID directement (<strong>Réglages iPhone &gt; [votre nom] &gt; Abonnements</strong>).</p>
+
         <h2>4. Base légale du traitement</h2>
         <p>Nous traitons vos données sur les bases légales suivantes :</p>
         <ul>
@@ -201,7 +207,8 @@
         <p>PadelBuzz utilise les prestataires techniques suivants, tous engagés contractuellement à protéger vos données conformément au RGPD :</p>
         <ul>
             <li><strong>Supabase</strong> (Europe) : Hébergement sécurisé de la base de données, authentification utilisateur, stockage des profils et des statistiques de matchs</li>
-            <li><strong>Cloudflare Stream</strong> (Europe) : Stockage et distribution chiffrés de vos vidéos de matchs et de vos clips de buzz. Vos vidéos restent strictement privées et ne sont accessibles qu'à vous.</li>
+            <li><strong>Cloudflare R2</strong> (Europe) : Stockage objet chiffré de vos vidéos de matchs et de vos clips de buzz. Vos vidéos restent strictement privées et ne sont accessibles qu&#39;à vous.</li>
+            <li><strong>RevenueCat</strong> (États-Unis) : Validation et gestion technique de votre abonnement iOS. Seul un identifiant Apple anonyme et le statut de votre abonnement sont transmis. Aucune donnée personnelle directe (nom, e-mail, contenu) n&#39;est partagée avec RevenueCat. Le transfert vers les États-Unis est encadré par les Clauses Contractuelles Types (CCT) de la Commission européenne.</li>
         </ul>
         <p>Ces prestataires agissent en qualité de sous-traitants au sens du RGPD et ne traitent jamais vos données pour leurs propres finalités.</p>
 
